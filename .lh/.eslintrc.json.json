@@ -1,0 +1,82 @@
+{
+    "sourceFile": ".eslintrc.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 16,
+            "patches": [
+                {
+                    "date": 1700064920679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1700072117532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,23 +1,20 @@\n {\n-    \"env\": {\n-        \"browser\": true,\n-        \"es2021\": true\n-    },\n-    \"extends\": [\n-        \"eslint:recommended\",\n-        \"plugin:@typescript-eslint/recommended\",\n-        \"plugin:react/recommended\"\n-    ],\n-    \"parser\": \"@typescript-eslint/parser\",\n-    \"parserOptions\": {\n-        \"ecmaVersion\": \"latest\",\n-        \"sourceType\": \"module\"\n-    },\n-    \"plugins\": [\n-        \"@typescript-eslint\",\n-        \"react\"\n-    ],\n-    \"rules\": {\n-        \"react/react-in-jsx-scope\"\n-    }\n+  \"env\": {\n+    \"browser\": true,\n+    \"es2021\": true\n+  },\n+  \"extends\": [\n+    \"eslint:recommended\",\n+    \"plugin:@typescript-eslint/recommended\",\n+    \"plugin:react/recommended\"\n+  ],\n+  \"parser\": \"@typescript-eslint/parser\",\n+  \"parserOptions\": {\n+    \"ecmaVersion\": \"latest\",\n+    \"sourceType\": \"module\"\n+  },\n+  \"plugins\": [\"@typescript-eslint\", \"react\"],\n+  \"rules\": {\n+    // \"react/react-in-jsx-scope\"\n+  }\n }\n"
+                },
+                {
+                    "date": 1700074429791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,6 +15,10 @@\n   },\n   \"plugins\": [\"@typescript-eslint\", \"react\"],\n   \"rules\": {\n     // \"react/react-in-jsx-scope\"\n+    \"no-unused-vars\": [\n+      \"error\",\n+      { \"vars\": \"all\", \"args\": \"after-used\", \"ignoreRestSiblings\": false }\n+    ]\n   }\n }\n"
+                },
+                {
+                    "date": 1700074472881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,7 @@\n   },\n   \"plugins\": [\"@typescript-eslint\", \"react\"],\n   \"rules\": {\n     // \"react/react-in-jsx-scope\"\n-    \"no-unused-vars\": [\n-      \"error\",\n-      { \"vars\": \"all\", \"args\": \"after-used\", \"ignoreRestSiblings\": false }\n-    ]\n+    \"no-unused-vars\": \"off\"\n   }\n }\n"
+                },
+                {
+                    "date": 1700074510052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,7 +15,8 @@\n   },\n   \"plugins\": [\"@typescript-eslint\", \"react\"],\n   \"rules\": {\n     // \"react/react-in-jsx-scope\"\n-    \"no-unused-vars\": \"off\"\n+    \"no-unused-vars\": \"off\",\n+    \"@typescript-eslint/no-unused-vars\": \"error\"\n   }\n }\n"
+                },
+                {
+                    "date": 1700074555321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,8 @@\n     \"sourceType\": \"module\"\n   },\n   \"plugins\": [\"@typescript-eslint\", \"react\"],\n   \"rules\": {\n-    // \"react/react-in-jsx-scope\"\n     \"no-unused-vars\": \"off\",\n     \"@typescript-eslint/no-unused-vars\": \"error\"\n   }\n }\n"
+                },
+                {
+                    "date": 1700075571593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n     \"browser\": true,\n     \"es2021\": true\n   },\n   \"extends\": [\n+    \"next/core-web-vitals\",\n     \"eslint:recommended\",\n     \"plugin:@typescript-eslint/recommended\",\n     \"plugin:react/recommended\"\n   ],\n"
+                },
+                {
+                    "date": 1700075597704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,8 @@\n     \"sourceType\": \"module\"\n   },\n   \"plugins\": [\"@typescript-eslint\", \"react\"],\n   \"rules\": {\n-    \"no-unused-vars\": \"off\",\n+    \"no-unused-vars\": \"true\",\n     \"@typescript-eslint/no-unused-vars\": \"error\"\n   }\n }\n"
+                },
+                {
+                    "date": 1700075605162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,8 @@\n     \"sourceType\": \"module\"\n   },\n   \"plugins\": [\"@typescript-eslint\", \"react\"],\n   \"rules\": {\n-    \"no-unused-vars\": \"true\",\n+    \"no-unused-vars\": \"off\",\n     \"@typescript-eslint/no-unused-vars\": \"error\"\n   }\n }\n"
+                },
+                {
+                    "date": 1700075770606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,8 @@\n   },\n   \"plugins\": [\"@typescript-eslint\", \"react\"],\n   \"rules\": {\n     \"no-unused-vars\": \"off\",\n-    \"@typescript-eslint/no-unused-vars\": \"error\"\n+    \"@typescript-eslint/no-unused-vars\": \"error\",\n+    \"react/react-in-jsx-scope\": \"off\"\n   }\n }\n"
+                },
+                {
+                    "date": 1700075829282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,7 @@\n   },\n   \"plugins\": [\"@typescript-eslint\", \"react\"],\n   \"rules\": {\n     \"no-unused-vars\": \"off\",\n-    \"@typescript-eslint/no-unused-vars\": \"error\",\n     \"react/react-in-jsx-scope\": \"off\"\n   }\n }\n"
+                },
+                {
+                    "date": 1700075845687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,8 @@\n   },\n   \"plugins\": [\"@typescript-eslint\", \"react\"],\n   \"rules\": {\n     \"no-unused-vars\": \"off\",\n+    \"@typescript-eslint/no-unused-vars\": \"warning\",\n     \"react/react-in-jsx-scope\": \"off\"\n   }\n }\n"
+                },
+                {
+                    "date": 1700075874131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,8 @@\n   },\n   \"plugins\": [\"@typescript-eslint\", \"react\"],\n   \"rules\": {\n     \"no-unused-vars\": \"off\",\n-    \"@typescript-eslint/no-unused-vars\": \"warning\",\n+    \"@typescript-eslint/no-unused-vars\": \"warn\",\n     \"react/react-in-jsx-scope\": \"off\"\n   }\n }\n"
+                },
+                {
+                    "date": 1700075898757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,8 @@\n   },\n   \"plugins\": [\"@typescript-eslint\", \"react\"],\n   \"rules\": {\n     \"no-unused-vars\": \"off\",\n-    \"@typescript-eslint/no-unused-vars\": \"warn\",\n+    \"@typescript-eslint/no-unused-vars\": \"off\",\n     \"react/react-in-jsx-scope\": \"off\"\n   }\n }\n"
+                },
+                {
+                    "date": 1700075917456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,7 @@\n     \"sourceType\": \"module\"\n   },\n   \"plugins\": [\"@typescript-eslint\", \"react\"],\n   \"rules\": {\n-    \"no-unused-vars\": \"off\",\n-    \"@typescript-eslint/no-unused-vars\": \"off\",\n     \"react/react-in-jsx-scope\": \"off\"\n   }\n }\n"
+                },
+                {
+                    "date": 1700076186928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,7 +15,11 @@\n     \"sourceType\": \"module\"\n   },\n   \"plugins\": [\"@typescript-eslint\", \"react\"],\n   \"rules\": {\n-    \"react/react-in-jsx-scope\": \"off\"\n+    \"react-hooks/rules-of-hooks\": \"error\",\n+    \"react-hooks/exhaustive-deps\": \"warn\",\n+    \"react/prop-types\": \"off\",\n+    \"react/react-in-jsx-scope\": \"off\",\n+    \"@typescript-eslint/explicit-module-boundary-types\": \"off\"\n   }\n }\n"
+                },
+                {
+                    "date": 1700077479599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,10 @@\n   \"extends\": [\n     \"next/core-web-vitals\",\n     \"eslint:recommended\",\n     \"plugin:@typescript-eslint/recommended\",\n-    \"plugin:react/recommended\"\n+    \"plugin:react/recommended\",\n+    \"prettier\"\n   ],\n   \"parser\": \"@typescript-eslint/parser\",\n   \"parserOptions\": {\n     \"ecmaVersion\": \"latest\",\n"
+                }
+            ],
+            "date": 1700064920678,
+            "name": "Commit-0",
+            "content": "{\n    \"env\": {\n        \"browser\": true,\n        \"es2021\": true\n    },\n    \"extends\": [\n        \"eslint:recommended\",\n        \"plugin:@typescript-eslint/recommended\",\n        \"plugin:react/recommended\"\n    ],\n    \"parser\": \"@typescript-eslint/parser\",\n    \"parserOptions\": {\n        \"ecmaVersion\": \"latest\",\n        \"sourceType\": \"module\"\n    },\n    \"plugins\": [\n        \"@typescript-eslint\",\n        \"react\"\n    ],\n    \"rules\": {\n        \"react/react-in-jsx-scope\"\n    }\n}\n"
+        }
+    ]
+}
