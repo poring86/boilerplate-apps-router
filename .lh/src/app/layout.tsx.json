@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 15,
+            "activePatchIndex": 17,
             "patches": [
                 {
                     "date": 1700077713209,
@@ -68,6 +68,14 @@
                 {
                     "date": 1700079984361,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import type { Metadata } from 'next'\n-import { Inter } from 'next/font/google';\n-import './globals.css';\n+import { Inter } from 'next/font/google'\n+import './globals.css'\n \n const inter = Inter({ subsets: ['latin'] })\n \n export const metadata: Metadata = {\n"
+                },
+                {
+                    "date": 1700099136517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import type { Metadata } from 'next'\n import { Inter } from 'next/font/google'\n import './globals.css'\n+import StyledComponentsRegistry from '@/lib/registry'\n \n const inter = Inter({ subsets: ['latin'] })\n \n export const metadata: Metadata = {\n@@ -15,8 +16,10 @@\n   children: React.ReactNode\n }) {\n   return (\n     <html lang=\"en\">\n-      <body className={inter.className}>{children}</body>\n+      <body className={inter.className}>\n+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>\n+      </body>\n     </html>\n   )\n }\n"
+                },
+                {
+                    "date": 1700139803462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n import type { Metadata } from 'next'\n import { Inter } from 'next/font/google'\n-import './globals.css'\n import StyledComponentsRegistry from '@/lib/registry'\n \n const inter = Inter({ subsets: ['latin'] })\n \n"
                 }
             ],
             "date": 1700077713209,
