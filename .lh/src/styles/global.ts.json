@@ -1,42 +1,42 @@
 {
-    "sourceFile": "src/styles/global.ts",
-    "activeCommit": 0,
-    "commits": [
+  "sourceFile": "src/styles/global.ts",
+  "activeCommit": 0,
+  "commits": [
+    {
+      "activePatchIndex": 6,
+      "patches": [
         {
-            "activePatchIndex": 6,
-            "patches": [
-                {
-                    "date": 1700140502549,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n"
-                },
-                {
-                    "date": 1700151195284,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n import { createGlobalStyle } from \"styled-components\";\n+\n const GlobalStyles = createGlobalStyle``\n \n export GlobalStyles\n\\ No newline at end of file\n"
-                },
-                {
-                    "date": 1700151207835,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { createGlobalStyle } from \"styled-components\";\n+import { createGlobalStyle } from 'styled-components'\n \n const GlobalStyles = createGlobalStyle``\n \n\\ No newline at end of file\n-export GlobalStyles\n+export default GlobalStyles\n"
-                },
-                {
-                    "date": 1700151343418,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,11 @@\n import { createGlobalStyle } from 'styled-components'\n \n-const GlobalStyles = createGlobalStyle``\n+const GlobalStyles = createGlobalStyle`\n+  *{\n\\ No newline at end of file\n+    margin: 0;\n+    padding: 0;\n+    box-sizing: border-box;\n+  }\n+`\n \n-export default GlobalStyles\n+export default GlobalStyles\n"
-                },
-                {
-                    "date": 1700151510138,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,11 @@\n     margin: 0;\n     padding: 0;\n     box-sizing: border-box;\n   }\n+\n+  html{\n+    font-size: 62.5%;\n\\ No newline at end of file\n+  }\n `\n \n-export default GlobalStyles\n+export default GlobalStyles\n"
-                },
-                {
-                    "date": 1700151599259,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,11 @@\n \n   html{\n     font-size: 62.5%;\n   }\n+\n+  html, body, #__next {\n+    height: 100%;\n\\ No newline at end of file\n+  }\n `\n \n-export default GlobalStyles\n+export default GlobalStyles\n"
-                },
-                {
-                    "date": 1700151989210,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+'use client'\n+\n import { createGlobalStyle } from 'styled-components'\n \n const GlobalStyles = createGlobalStyle`\n   *{\n@@ -13,7 +15,11 @@\n \n   html, body, #__next {\n     height: 100%;\n   }\n+\n+  body {\n+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n\\ No newline at end of file\n+  }\n `\n \n-export default GlobalStyles\n+export default GlobalStyles\n"
-                }
-            ],
-            "date": 1700140502549,
-            "name": "Commit-0",
-            "content": "import { createGlobalStyle } from \"styled-components\";\nconst GlobalStyles = createGlobalStyle``\n\nexport GlobalStyles"
+          "date": 1700140502549,
+          "content": "Index: \n===================================================================\n--- \n+++ \n"
+        },
+        {
+          "date": 1700151195284,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n import { createGlobalStyle } from \"styled-components\";\n+\n const GlobalStyles = createGlobalStyle``\n \n export GlobalStyles\n\\ No newline at end of file\n"
+        },
+        {
+          "date": 1700151207835,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import { createGlobalStyle } from \"styled-components\";\n+import { createGlobalStyle } from 'styled-components'\n \n const GlobalStyles = createGlobalStyle``\n \n\\ No newline at end of file\n-export GlobalStyles\n+export default GlobalStyles\n"
+        },
+        {
+          "date": 1700151343418,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,11 @@\n import { createGlobalStyle } from 'styled-components'\n \n-const GlobalStyles = createGlobalStyle``\n+const GlobalStyles = createGlobalStyle`\n+  *{\n\\ No newline at end of file\n+    margin: 0;\n+    padding: 0;\n+    box-sizing: border-box;\n+  }\n+`\n \n-export default GlobalStyles\n+export default GlobalStyles\n"
+        },
+        {
+          "date": 1700151510138,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,11 @@\n     margin: 0;\n     padding: 0;\n     box-sizing: border-box;\n   }\n+\n+  html{\n+    font-size: 62.5%;\n\\ No newline at end of file\n+  }\n `\n \n-export default GlobalStyles\n+export default GlobalStyles\n"
+        },
+        {
+          "date": 1700151599259,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,11 @@\n \n   html{\n     font-size: 62.5%;\n   }\n+\n+  html, body, #__next {\n+    height: 100%;\n\\ No newline at end of file\n+  }\n `\n \n-export default GlobalStyles\n+export default GlobalStyles\n"
+        },
+        {
+          "date": 1700151989210,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+'use client'\n+\n import { createGlobalStyle } from 'styled-components'\n \n const GlobalStyles = createGlobalStyle`\n   *{\n@@ -13,7 +15,11 @@\n \n   html, body, #__next {\n     height: 100%;\n   }\n+\n+  body {\n+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n\\ No newline at end of file\n+  }\n `\n \n-export default GlobalStyles\n+export default GlobalStyles\n"
         }
-    ]
+      ],
+      "date": 1700140502549,
+      "name": "Commit-0",
+      "content": "import { createGlobalStyle } from \"styled-components\";\nconst GlobalStyles = createGlobalStyle``\n\nexport GlobalStyles"
+    }
+  ]
 }

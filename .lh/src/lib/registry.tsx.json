@@ -1,18 +1,18 @@
 {
-    "sourceFile": "src/lib/registry.tsx",
-    "activeCommit": 0,
-    "commits": [
+  "sourceFile": "src/lib/registry.tsx",
+  "activeCommit": 0,
+  "commits": [
+    {
+      "activePatchIndex": 0,
+      "patches": [
         {
-            "activePatchIndex": 0,
-            "patches": [
-                {
-                    "date": 1700098916524,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n"
-                }
-            ],
-            "date": 1700098916524,
-            "name": "Commit-0",
-            "content": "'use client'\n\nimport React, { useState } from 'react'\nimport { useServerInsertedHTML } from 'next/navigation'\nimport { ServerStyleSheet, StyleSheetManager } from 'styled-components'\n\nexport default function StyledComponentsRegistry({\n  children\n}: {\n  children: React.ReactNode\n}) {\n  // Only create stylesheet once with lazy initial state\n  // x-ref: https://reactjs.org/docs/hooks-reference.html#lazy-initial-state\n  const [styledComponentsStyleSheet] = useState(() => new ServerStyleSheet())\n\n  useServerInsertedHTML(() => {\n    const styles = styledComponentsStyleSheet.getStyleElement()\n    styledComponentsStyleSheet.instance.clearTag()\n    return <>{styles}</>\n  })\n\n  if (typeof window !== 'undefined') return <>{children}</>\n\n  return (\n    <StyleSheetManager sheet={styledComponentsStyleSheet.instance}>\n      {children}\n    </StyleSheetManager>\n  )\n}\n"
+          "date": 1700098916524,
+          "content": "Index: \n===================================================================\n--- \n+++ \n"
         }
-    ]
+      ],
+      "date": 1700098916524,
+      "name": "Commit-0",
+      "content": "'use client'\n\nimport React, { useState } from 'react'\nimport { useServerInsertedHTML } from 'next/navigation'\nimport { ServerStyleSheet, StyleSheetManager } from 'styled-components'\n\nexport default function StyledComponentsRegistry({\n  children\n}: {\n  children: React.ReactNode\n}) {\n  // Only create stylesheet once with lazy initial state\n  // x-ref: https://reactjs.org/docs/hooks-reference.html#lazy-initial-state\n  const [styledComponentsStyleSheet] = useState(() => new ServerStyleSheet())\n\n  useServerInsertedHTML(() => {\n    const styles = styledComponentsStyleSheet.getStyleElement()\n    styledComponentsStyleSheet.instance.clearTag()\n    return <>{styles}</>\n  })\n\n  if (typeof window !== 'undefined') return <>{children}</>\n\n  return (\n    <StyleSheetManager sheet={styledComponentsStyleSheet.instance}>\n      {children}\n    </StyleSheetManager>\n  )\n}\n"
+    }
+  ]
 }

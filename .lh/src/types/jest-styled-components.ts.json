@@ -1,0 +1,34 @@
+{
+  "sourceFile": "src/types/jest-styled-components.ts",
+  "activeCommit": 0,
+  "commits": [
+    {
+      "activePatchIndex": 4,
+      "patches": [
+        {
+          "date": 1700166111048,
+          "content": "Index: \n===================================================================\n--- \n+++ \n"
+        },
+        {
+          "date": 1700166566709,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n import { NewPlugin } from 'pretty-format'\n import { css } from 'styled-components'\n \n declare global {\n+  // eslint-disable-next-line @typescript-eslint/no-namespace\n   namespace jest {\n     interface AsymmetricMatcher {\n       $$typeof: Symbol\n       sample?: string | RegExp | object | Array<any> | Function\n@@ -20,9 +21,9 @@\n       supports?: string\n     }\n \n     // eslint-disable-next-line @typescript-eslint/no-unused-vars\n-    interface Matchers<R, T> {\n+    interface Matchers<R> {\n       toHaveStyleRule(property: string, value?: Value, options?: Options): R\n     }\n   }\n }\n"
+        },
+        {
+          "date": 1700166663707,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       $$typeof: Symbol\n       sample?: string | RegExp | object | Array<any> | Function\n     }\n \n-    type Value = string | number | RegExp | AsymmetricMatcher | undefined\n+    // type Value = string | number | RegExp | AsymmetricMatcher | undefined\n \n     interface Options {\n       media?: string\n       modifier?: string | ReturnType<typeof css>\n"
+        },
+        {
+          "date": 1700166717072,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       $$typeof: Symbol\n       sample?: string | RegExp | object | Array<any> | Function\n     }\n \n-    // type Value = string | number | RegExp | AsymmetricMatcher | undefined\n+    type Value = string | number | RegExp | AsymmetricMatcher | undefined\n \n     interface Options {\n       media?: string\n       modifier?: string | ReturnType<typeof css>\n"
+        },
+        {
+          "date": 1700167685481,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n       $$typeof: Symbol\n       sample?: string | RegExp | object | Array<any> | Function\n     }\n \n-    type Value = string | number | RegExp | AsymmetricMatcher | undefined\n+    // type Value = string | number | RegExp | AsymmetricMatcher | undefined\n \n     interface Options {\n       media?: string\n       modifier?: string | ReturnType<typeof css>\n"
+        }
+      ],
+      "date": 1700166111047,
+      "name": "Commit-0",
+      "content": "// https://github.com/styled-components/jest-styled-components/blob/master/typings/index.d.ts\n\n/* eslint-disable @typescript-eslint/no-explicit-any */\n/* eslint-disable @typescript-eslint/ban-types */\nimport { NewPlugin } from 'pretty-format'\nimport { css } from 'styled-components'\n\ndeclare global {\n  namespace jest {\n    interface AsymmetricMatcher {\n      $$typeof: Symbol\n      sample?: string | RegExp | object | Array<any> | Function\n    }\n\n    type Value = string | number | RegExp | AsymmetricMatcher | undefined\n\n    interface Options {\n      media?: string\n      modifier?: string | ReturnType<typeof css>\n      supports?: string\n    }\n\n    // eslint-disable-next-line @typescript-eslint/no-unused-vars\n    interface Matchers<R, T> {\n      toHaveStyleRule(property: string, value?: Value, options?: Options): R\n    }\n  }\n}\n\nexport interface StyledComponentsSerializerOptions {\n  addStyles?: boolean\n  classNameFormatter?: (index: number) => string\n}\n\nexport declare const styleSheetSerializer: NewPlugin & {\n  setStyleSheetSerializerOptions: (\n    options?: StyledComponentsSerializerOptions\n  ) => void\n}\n"
+    }
+  ]
+}

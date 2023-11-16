@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 16,
+            "activePatchIndex": 18,
             "patches": [
                 {
                     "date": 1700064920679,
@@ -72,6 +72,14 @@
                 {
                     "date": 1700077479599,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,10 @@\n   \"extends\": [\n     \"next/core-web-vitals\",\n     \"eslint:recommended\",\n     \"plugin:@typescript-eslint/recommended\",\n-    \"plugin:react/recommended\"\n+    \"plugin:react/recommended\",\n+    \"prettier\"\n   ],\n   \"parser\": \"@typescript-eslint/parser\",\n   \"parserOptions\": {\n     \"ecmaVersion\": \"latest\",\n"
+                },
+                {
+                    "date": 1700176389333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,10 @@\n     \"next/core-web-vitals\",\n     \"eslint:recommended\",\n     \"plugin:@typescript-eslint/recommended\",\n     \"plugin:react/recommended\",\n-    \"prettier\"\n+    \"prettier\",\n+    \"plugin:storybook/recommended\"\n   ],\n   \"parser\": \"@typescript-eslint/parser\",\n   \"parserOptions\": {\n     \"ecmaVersion\": \"latest\",\n@@ -20,7 +21,8 @@\n     \"react-hooks/rules-of-hooks\": \"error\",\n     \"react-hooks/exhaustive-deps\": \"warn\",\n     \"react/prop-types\": \"off\",\n     \"react/react-in-jsx-scope\": \"off\",\n-    \"@typescript-eslint/explicit-module-boundary-types\": \"off\"\n+    \"@typescript-eslint/explicit-module-boundary-types\": \"off\",\n+    \"react/no-unescaped-entities\": 0\n   }\n }\n"
+                },
+                {
+                    "date": 1700176591520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,7 +22,8 @@\n     \"react-hooks/exhaustive-deps\": \"warn\",\n     \"react/prop-types\": \"off\",\n     \"react/react-in-jsx-scope\": \"off\",\n     \"@typescript-eslint/explicit-module-boundary-types\": \"off\",\n-    \"react/no-unescaped-entities\": 0\n+    \"react/no-unescaped-entities\": 0,\n+    \"react/no-unknown-property\": [\"error\", { \"ignore\": [\"jsx\"] }]\n   }\n }\n"
                 }
             ],
             "date": 1700064920678,

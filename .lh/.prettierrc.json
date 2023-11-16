@@ -1,18 +1,18 @@
 {
-    "sourceFile": ".prettierrc",
-    "activeCommit": 0,
-    "commits": [
+  "sourceFile": ".prettierrc",
+  "activeCommit": 0,
+  "commits": [
+    {
+      "activePatchIndex": 0,
+      "patches": [
         {
-            "activePatchIndex": 0,
-            "patches": [
-                {
-                    "date": 1700076871313,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n"
-                }
-            ],
-            "date": 1700076871313,
-            "name": "Commit-0",
-            "content": "{\n  \"trailingComma\": \"none\",\n  \"semi\": false,\n  \"singleQuote\": true\n}"
+          "date": 1700076871313,
+          "content": "Index: \n===================================================================\n--- \n+++ \n"
         }
-    ]
+      ],
+      "date": 1700076871313,
+      "name": "Commit-0",
+      "content": "{\n  \"trailingComma\": \"none\",\n  \"semi\": false,\n  \"singleQuote\": true\n}"
+    }
+  ]
 }

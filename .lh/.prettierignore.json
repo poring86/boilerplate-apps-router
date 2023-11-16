@@ -1,22 +1,22 @@
 {
-    "sourceFile": ".prettierignore",
-    "activeCommit": 0,
-    "commits": [
+  "sourceFile": ".prettierignore",
+  "activeCommit": 0,
+  "commits": [
+    {
+      "activePatchIndex": 1,
+      "patches": [
         {
-            "activePatchIndex": 1,
-            "patches": [
-                {
-                    "date": 1700077088742,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n"
-                },
-                {
-                    "date": 1700079144797,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-{\n-  \"trailingComma\": \"none\",\n-  \"semi\": false,\n-  \"singleQuote\": true\n-}\n\\ No newline at end of file\n+!.storybook\n+!.jest\n+build\n+coverage\n+.next\n\\ No newline at end of file\n"
-                }
-            ],
-            "date": 1700077088742,
-            "name": "Commit-0",
-            "content": "{\n  \"trailingComma\": \"none\",\n  \"semi\": false,\n  \"singleQuote\": true\n}"
+          "date": 1700077088742,
+          "content": "Index: \n===================================================================\n--- \n+++ \n"
+        },
+        {
+          "date": 1700079144797,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-{\n-  \"trailingComma\": \"none\",\n-  \"semi\": false,\n-  \"singleQuote\": true\n-}\n\\ No newline at end of file\n+!.storybook\n+!.jest\n+build\n+coverage\n+.next\n\\ No newline at end of file\n"
         }
-    ]
+      ],
+      "date": 1700077088742,
+      "name": "Commit-0",
+      "content": "{\n  \"trailingComma\": \"none\",\n  \"semi\": false,\n  \"singleQuote\": true\n}"
+    }
+  ]
 }

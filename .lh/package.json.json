@@ -1,26 +1,26 @@
 {
-    "sourceFile": "package.json",
-    "activeCommit": 0,
-    "commits": [
+  "sourceFile": "package.json",
+  "activeCommit": 0,
+  "commits": [
+    {
+      "activePatchIndex": 2,
+      "patches": [
         {
-            "activePatchIndex": 2,
-            "patches": [
-                {
-                    "date": 1700087348632,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n"
-                },
-                {
-                    "date": 1700094166830,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     \"build\": \"next build\",\n     \"start\": \"next start\",\n     \"lint\": \"next lint\",\n     \"prepare\": \"husky install\",\n-    \"test\": \"jest --passWithNoTests --maxWorkers=50%\",\n+    \"test\": \"NODE_ENV=test jest --passWithNoTests --maxWorkers=50%\",\n     \"test:watch\": \"jest --watch --maxWorkers=25%\",\n     \"test:ci\": \"jest --runInBand\"\n   },\n   \"dependencies\": {\n@@ -17,8 +17,11 @@\n     \"react\": \"^18\",\n     \"react-dom\": \"^18\"\n   },\n   \"devDependencies\": {\n+    \"@testing-library/jest-dom\": \"^6.1.4\",\n+    \"@testing-library/react\": \"^14.1.0\",\n+    \"@testing-library/user-event\": \"^14.5.1\",\n     \"@types/jest\": \"^29.5.8\",\n     \"@types/node\": \"^20\",\n     \"@types/react\": \"^18\",\n     \"@types/react-dom\": \"^18\",\n"
-                },
-                {
-                    "date": 1700094189732,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n     \"start\": \"next start\",\n     \"lint\": \"next lint\",\n     \"prepare\": \"husky install\",\n     \"test\": \"NODE_ENV=test jest --passWithNoTests --maxWorkers=50%\",\n-    \"test:watch\": \"jest --watch --maxWorkers=25%\",\n-    \"test:ci\": \"jest --runInBand\"\n+    \"test:watch\": \"NODE_ENV=test jest --watch --maxWorkers=25%\",\n+    \"test:ci\": \"NODE_ENV=test jest --runInBand\"\n   },\n   \"dependencies\": {\n     \"next\": \"14.0.2\",\n     \"react\": \"^18\",\n"
-                }
-            ],
-            "date": 1700087348632,
-            "name": "Commit-0",
-            "content": "{\n  \"name\": \"boilerplate-apps-router\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"scripts\": {\n    \"dev\": \"next dev\",\n    \"build\": \"next build\",\n    \"start\": \"next start\",\n    \"lint\": \"next lint\",\n    \"prepare\": \"husky install\",\n    \"test\": \"jest --passWithNoTests --maxWorkers=50%\",\n    \"test:watch\": \"jest --watch --maxWorkers=25%\",\n    \"test:ci\": \"jest --runInBand\"\n  },\n  \"dependencies\": {\n    \"next\": \"14.0.2\",\n    \"react\": \"^18\",\n    \"react-dom\": \"^18\"\n  },\n  \"devDependencies\": {\n    \"@types/jest\": \"^29.5.8\",\n    \"@types/node\": \"^20\",\n    \"@types/react\": \"^18\",\n    \"@types/react-dom\": \"^18\",\n    \"@typescript-eslint/eslint-plugin\": \"^6.11.0\",\n    \"@typescript-eslint/parser\": \"^6.11.0\",\n    \"autoprefixer\": \"^10.0.1\",\n    \"eslint\": \"^8\",\n    \"eslint-config-next\": \"14.0.2\",\n    \"eslint-config-prettier\": \"^9.0.0\",\n    \"eslint-plugin-react\": \"^7.33.2\",\n    \"husky\": \"^8.0.0\",\n    \"jest\": \"^29.7.0\",\n    \"jest-environment-jsdom\": \"^29.7.0\",\n    \"lint-staged\": \"^15.1.0\",\n    \"postcss\": \"^8\",\n    \"prettier\": \"3.1.0\",\n    \"tailwindcss\": \"^3.3.0\",\n    \"typescript\": \"^5\"\n  }\n}\n"
+          "date": 1700087348632,
+          "content": "Index: \n===================================================================\n--- \n+++ \n"
+        },
+        {
+          "date": 1700094166830,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     \"build\": \"next build\",\n     \"start\": \"next start\",\n     \"lint\": \"next lint\",\n     \"prepare\": \"husky install\",\n-    \"test\": \"jest --passWithNoTests --maxWorkers=50%\",\n+    \"test\": \"NODE_ENV=test jest --passWithNoTests --maxWorkers=50%\",\n     \"test:watch\": \"jest --watch --maxWorkers=25%\",\n     \"test:ci\": \"jest --runInBand\"\n   },\n   \"dependencies\": {\n@@ -17,8 +17,11 @@\n     \"react\": \"^18\",\n     \"react-dom\": \"^18\"\n   },\n   \"devDependencies\": {\n+    \"@testing-library/jest-dom\": \"^6.1.4\",\n+    \"@testing-library/react\": \"^14.1.0\",\n+    \"@testing-library/user-event\": \"^14.5.1\",\n     \"@types/jest\": \"^29.5.8\",\n     \"@types/node\": \"^20\",\n     \"@types/react\": \"^18\",\n     \"@types/react-dom\": \"^18\",\n"
+        },
+        {
+          "date": 1700094189732,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n     \"start\": \"next start\",\n     \"lint\": \"next lint\",\n     \"prepare\": \"husky install\",\n     \"test\": \"NODE_ENV=test jest --passWithNoTests --maxWorkers=50%\",\n-    \"test:watch\": \"jest --watch --maxWorkers=25%\",\n-    \"test:ci\": \"jest --runInBand\"\n+    \"test:watch\": \"NODE_ENV=test jest --watch --maxWorkers=25%\",\n+    \"test:ci\": \"NODE_ENV=test jest --runInBand\"\n   },\n   \"dependencies\": {\n     \"next\": \"14.0.2\",\n     \"react\": \"^18\",\n"
         }
-    ]
+      ],
+      "date": 1700087348632,
+      "name": "Commit-0",
+      "content": "{\n  \"name\": \"boilerplate-apps-router\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"scripts\": {\n    \"dev\": \"next dev\",\n    \"build\": \"next build\",\n    \"start\": \"next start\",\n    \"lint\": \"next lint\",\n    \"prepare\": \"husky install\",\n    \"test\": \"jest --passWithNoTests --maxWorkers=50%\",\n    \"test:watch\": \"jest --watch --maxWorkers=25%\",\n    \"test:ci\": \"jest --runInBand\"\n  },\n  \"dependencies\": {\n    \"next\": \"14.0.2\",\n    \"react\": \"^18\",\n    \"react-dom\": \"^18\"\n  },\n  \"devDependencies\": {\n    \"@types/jest\": \"^29.5.8\",\n    \"@types/node\": \"^20\",\n    \"@types/react\": \"^18\",\n    \"@types/react-dom\": \"^18\",\n    \"@typescript-eslint/eslint-plugin\": \"^6.11.0\",\n    \"@typescript-eslint/parser\": \"^6.11.0\",\n    \"autoprefixer\": \"^10.0.1\",\n    \"eslint\": \"^8\",\n    \"eslint-config-next\": \"14.0.2\",\n    \"eslint-config-prettier\": \"^9.0.0\",\n    \"eslint-plugin-react\": \"^7.33.2\",\n    \"husky\": \"^8.0.0\",\n    \"jest\": \"^29.7.0\",\n    \"jest-environment-jsdom\": \"^29.7.0\",\n    \"lint-staged\": \"^15.1.0\",\n    \"postcss\": \"^8\",\n    \"prettier\": \"3.1.0\",\n    \"tailwindcss\": \"^3.3.0\",\n    \"typescript\": \"^5\"\n  }\n}\n"
+    }
+  ]
 }

@@ -1,22 +1,22 @@
 {
-    "sourceFile": ".lintstagedrc.js",
-    "activeCommit": 0,
-    "commits": [
+  "sourceFile": ".lintstagedrc.js",
+  "activeCommit": 0,
+  "commits": [
+    {
+      "activePatchIndex": 1,
+      "patches": [
         {
-            "activePatchIndex": 1,
-            "patches": [
-                {
-                    "date": 1700081768094,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n"
-                },
-                {
-                    "date": 1700095004188,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n module.exports = {\n   // Lint & Prettify TS and JS files\n   '*.{js,jsx,ts,tsx}': (filenames) => [\n     `prettier --write ${filenames.join(' ')}`,\n-    `npm run lint --fix . ${filenames.join(' --file')}`\n+    `npm run lint --fix . ${filenames.join(' --file')}`,\n+    `npm test -- --findRelatedTests ${filenames.join(' ')}`\n   ]\n }\n"
-                }
-            ],
-            "date": 1700081768094,
-            "name": "Commit-0",
-            "content": "module.exports = {\n  // Lint & Prettify TS and JS files\n  '*.{js,jsx,ts,tsx}': (filenames) => [\n    `prettier --write ${filenames.join(' ')}`,\n    `npm run lint --fix . ${filenames.join(' --file')}`\n  ]\n}\n"
+          "date": 1700081768094,
+          "content": "Index: \n===================================================================\n--- \n+++ \n"
+        },
+        {
+          "date": 1700095004188,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n module.exports = {\n   // Lint & Prettify TS and JS files\n   '*.{js,jsx,ts,tsx}': (filenames) => [\n     `prettier --write ${filenames.join(' ')}`,\n-    `npm run lint --fix . ${filenames.join(' --file')}`\n+    `npm run lint --fix . ${filenames.join(' --file')}`,\n+    `npm test -- --findRelatedTests ${filenames.join(' ')}`\n   ]\n }\n"
         }
-    ]
+      ],
+      "date": 1700081768094,
+      "name": "Commit-0",
+      "content": "module.exports = {\n  // Lint & Prettify TS and JS files\n  '*.{js,jsx,ts,tsx}': (filenames) => [\n    `prettier --write ${filenames.join(' ')}`,\n    `npm run lint --fix . ${filenames.join(' --file')}`\n  ]\n}\n"
+    }
+  ]
 }

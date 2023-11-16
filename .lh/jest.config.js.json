@@ -1,26 +1,34 @@
 {
-    "sourceFile": "jest.config.js",
-    "activeCommit": 0,
-    "commits": [
+  "sourceFile": "jest.config.js",
+  "activeCommit": 0,
+  "commits": [
+    {
+      "activePatchIndex": 4,
+      "patches": [
         {
-            "activePatchIndex": 2,
-            "patches": [
-                {
-                    "date": 1700087319056,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n"
-                },
-                {
-                    "date": 1700139346799,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n module.exports = {\n   testEnvironment: 'jsdom',\n   testPathIgnorePatterns: ['/node_modules/', '/.next/'],\n   collectCoverage: true,\n-  collectCoverageFrom: ['src/**/*.ts(x)?'],\n+  collectCoverageFrom: ['src/**/*.ts(x)?', '!src/app/**'],\n   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],\n   modulePaths: ['<rootDir>/src/'],\n   transform: {\n     '^.+\\\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }]\n"
-                },
-                {
-                    "date": 1700139389140,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,13 @@\n module.exports = {\n   testEnvironment: 'jsdom',\n   testPathIgnorePatterns: ['/node_modules/', '/.next/'],\n   collectCoverage: true,\n-  collectCoverageFrom: ['src/**/*.ts(x)?', '!src/app/**'],\n+  collectCoverageFrom: [\n+    'src/**/*.ts(x)?',\n+    '!src/app/**',\n+    '!src/lib/registry.tsx'\n+  ],\n   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],\n   modulePaths: ['<rootDir>/src/'],\n   transform: {\n     '^.+\\\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }]\n"
-                }
-            ],
-            "date": 1700087319056,
-            "name": "Commit-0",
-            "content": "module.exports = {\n  testEnvironment: 'jsdom',\n  testPathIgnorePatterns: ['/node_modules/', '/.next/'],\n  collectCoverage: true,\n  collectCoverageFrom: ['src/**/*.ts(x)?'],\n  setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],\n  modulePaths: ['<rootDir>/src/'],\n  transform: {\n    '^.+\\\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }]\n  }\n}\n"
+          "date": 1700087319056,
+          "content": "Index: \n===================================================================\n--- \n+++ \n"
+        },
+        {
+          "date": 1700139346799,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n module.exports = {\n   testEnvironment: 'jsdom',\n   testPathIgnorePatterns: ['/node_modules/', '/.next/'],\n   collectCoverage: true,\n-  collectCoverageFrom: ['src/**/*.ts(x)?'],\n+  collectCoverageFrom: ['src/**/*.ts(x)?', '!src/app/**'],\n   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],\n   modulePaths: ['<rootDir>/src/'],\n   transform: {\n     '^.+\\\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }]\n"
+        },
+        {
+          "date": 1700139389140,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,13 @@\n module.exports = {\n   testEnvironment: 'jsdom',\n   testPathIgnorePatterns: ['/node_modules/', '/.next/'],\n   collectCoverage: true,\n-  collectCoverageFrom: ['src/**/*.ts(x)?', '!src/app/**'],\n+  collectCoverageFrom: [\n+    'src/**/*.ts(x)?',\n+    '!src/app/**',\n+    '!src/lib/registry.tsx'\n+  ],\n   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],\n   modulePaths: ['<rootDir>/src/'],\n   transform: {\n     '^.+\\\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }]\n"
+        },
+        {
+          "date": 1700167290856,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,6 +10,10 @@\n   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],\n   modulePaths: ['<rootDir>/src/'],\n   transform: {\n     '^.+\\\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }]\n+  },\n+  moduleNameMapper: {\n+    '^styled-components':\n+      'styled-components/dist/styled-components.browser.cjs.js'\n   }\n }\n"
+        },
+        {
+          "date": 1700168207918,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,10 @@\n   collectCoverage: true,\n   collectCoverageFrom: [\n     'src/**/*.ts(x)?',\n     '!src/app/**',\n-    '!src/lib/registry.tsx'\n+    '!src/lib/registry.tsx',\n+    '!src/types/**'\n   ],\n   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],\n   modulePaths: ['<rootDir>/src/'],\n   transform: {\n"
         }
-    ]
+      ],
+      "date": 1700087319056,
+      "name": "Commit-0",
+      "content": "module.exports = {\n  testEnvironment: 'jsdom',\n  testPathIgnorePatterns: ['/node_modules/', '/.next/'],\n  collectCoverage: true,\n  collectCoverageFrom: ['src/**/*.ts(x)?'],\n  setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],\n  modulePaths: ['<rootDir>/src/'],\n  transform: {\n    '^.+\\\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }]\n  }\n}\n"
+    }
+  ]
 }

@@ -1,34 +1,50 @@
 {
-    "sourceFile": "src/components/Main/test.tsx",
-    "activeCommit": 0,
-    "commits": [
+  "sourceFile": "src/components/Main/test.tsx",
+  "activeCommit": 0,
+  "commits": [
+    {
+      "activePatchIndex": 8,
+      "patches": [
         {
-            "activePatchIndex": 4,
-            "patches": [
-                {
-                    "date": 1700092583502,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n"
-                },
-                {
-                    "date": 1700092589828,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { render } from '@testing-library/react'\n \n describe('<Main />', () => {\n   it('should render the headings', () => {\n-    render()\n+    render(<Main />)\n   })\n })\n"
-                },
-                {
-                    "date": 1700092605618,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import { render } from '@testing-library/react'\n+import Main from '.'\n \n describe('<Main />', () => {\n   it('should render the headings', () => {\n     render(<Main />)\n"
-                },
-                {
-                    "date": 1700092729189,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,12 @@\n-import { render } from '@testing-library/react'\n+import { render, screen } from '@testing-library/react'\n import Main from '.'\n \n describe('<Main />', () => {\n   it('should render the headings', () => {\n     render(<Main />)\n+\n+    expect(\n+      screen.getByRole('heading', { name: /react avançado/i })\n+    ).toBeInTheDocument()\n   })\n })\n"
-                },
-                {
-                    "date": 1700093202811,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,13 @@\n import Main from '.'\n \n describe('<Main />', () => {\n   it('should render the headings', () => {\n-    render(<Main />)\n+    const { container } = render(<Main />)\n \n     expect(\n       screen.getByRole('heading', { name: /react avançado/i })\n     ).toBeInTheDocument()\n+\n+    expect(container.firstChild).toMatchSnapshot()\n   })\n })\n"
-                }
-            ],
-            "date": 1700092583502,
-            "name": "Commit-0",
-            "content": "import { render } from '@testing-library/react'\n\ndescribe('<Main />', () => {\n  it('should render the headings', () => {\n    render()\n  })\n})\n"
+          "date": 1700092583502,
+          "content": "Index: \n===================================================================\n--- \n+++ \n"
+        },
+        {
+          "date": 1700092589828,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { render } from '@testing-library/react'\n \n describe('<Main />', () => {\n   it('should render the headings', () => {\n-    render()\n+    render(<Main />)\n   })\n })\n"
+        },
+        {
+          "date": 1700092605618,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import { render } from '@testing-library/react'\n+import Main from '.'\n \n describe('<Main />', () => {\n   it('should render the headings', () => {\n     render(<Main />)\n"
+        },
+        {
+          "date": 1700092729189,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,12 @@\n-import { render } from '@testing-library/react'\n+import { render, screen } from '@testing-library/react'\n import Main from '.'\n \n describe('<Main />', () => {\n   it('should render the headings', () => {\n     render(<Main />)\n+\n+    expect(\n+      screen.getByRole('heading', { name: /react avançado/i })\n+    ).toBeInTheDocument()\n   })\n })\n"
+        },
+        {
+          "date": 1700093202811,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,13 @@\n import Main from '.'\n \n describe('<Main />', () => {\n   it('should render the headings', () => {\n-    render(<Main />)\n+    const { container } = render(<Main />)\n \n     expect(\n       screen.getByRole('heading', { name: /react avançado/i })\n     ).toBeInTheDocument()\n+\n+    expect(container.firstChild).toMatchSnapshot()\n   })\n })\n"
+        },
+        {
+          "date": 1700167945249,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,9 @@\n     ).toBeInTheDocument()\n \n     expect(container.firstChild).toMatchSnapshot()\n   })\n+\n+  it('should render the colors correctly', () => {\n+    const { container } = render(<Main />)\n+  })\n })\n"
+        },
+        {
+          "date": 1700167993524,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,6 +13,8 @@\n   })\n \n   it('should render the colors correctly', () => {\n     const { container } = render(<Main />)\n+\n+    expect(container.firstChild).toHaveStyle({ 'background-color': '#06092b' })\n   })\n })\n"
+        },
+        {
+          "date": 1700168065438,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,7 @@\n \n   it('should render the colors correctly', () => {\n     const { container } = render(<Main />)\n \n-    expect(container.firstChild).toHaveStyle({ 'background-color': '#06092b' })\n+    expect(container.firstChild).toHaveStyle({ 'background-color': 'red' })\n   })\n })\n"
+        },
+        {
+          "date": 1700168079490,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,7 @@\n \n   it('should render the colors correctly', () => {\n     const { container } = render(<Main />)\n \n-    expect(container.firstChild).toHaveStyle({ 'background-color': 'red' })\n+    expect(container.firstChild).toHaveStyle({ 'background-color': '#06092b' })\n   })\n })\n"
         }
-    ]
+      ],
+      "date": 1700092583502,
+      "name": "Commit-0",
+      "content": "import { render } from '@testing-library/react'\n\ndescribe('<Main />', () => {\n  it('should render the headings', () => {\n    render()\n  })\n})\n"
+    }
+  ]
 }

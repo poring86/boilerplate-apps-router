@@ -1,18 +1,22 @@
 {
-    "sourceFile": ".jest/setup.ts",
-    "activeCommit": 0,
-    "commits": [
+  "sourceFile": ".jest/setup.ts",
+  "activeCommit": 0,
+  "commits": [
+    {
+      "activePatchIndex": 1,
+      "patches": [
         {
-            "activePatchIndex": 0,
-            "patches": [
-                {
-                    "date": 1700087841923,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n"
-                }
-            ],
-            "date": 1700087841923,
-            "name": "Commit-0",
-            "content": "import '@testing-library/jest-dom'\n"
+          "date": 1700087841923,
+          "content": "Index: \n===================================================================\n--- \n+++ \n"
+        },
+        {
+          "date": 1700166176881,
+          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n import '@testing-library/jest-dom'\n+import 'jest-styled-components'\n"
         }
-    ]
+      ],
+      "date": 1700087841923,
+      "name": "Commit-0",
+      "content": "import '@testing-library/jest-dom'\n"
+    }
+  ]
 }
