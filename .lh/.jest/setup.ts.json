@@ -1,0 +1,18 @@
+{
+    "sourceFile": ".jest/setup.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1700087841923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1700087841923,
+            "name": "Commit-0",
+            "content": "import '@testing-library/jest-dom'\n"
+        }
+    ]
+}
