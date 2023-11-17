@@ -1,42 +1,54 @@
 {
-  "sourceFile": "src/components/Main/index.tsx",
-  "activeCommit": 0,
-  "commits": [
-    {
-      "activePatchIndex": 6,
-      "patches": [
+    "sourceFile": "src/components/Main/index.tsx",
+    "activeCommit": 0,
+    "commits": [
         {
-          "date": 1700091566467,
-          "content": "Index: \n===================================================================\n--- \n+++ \n"
-        },
-        {
-          "date": 1700091590626,
-          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n-const Main = () => {\n-  ;<main>\n+const Main = () => (\n+  <main>\n     <h1>React Avançado</h1>\n   </main>\n-}\n+)\n \n export const Main\n"
-        },
-        {
-          "date": 1700091626748,
-          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,5 @@\n-const Main = () => (\n+export const Main = () => (\n   <main>\n     <h1>React Avançado</h1>\n   </main>\n )\n-\n-export const Main\n"
-        },
-        {
-          "date": 1700091639446,
-          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n-export const Main = () => (\n+const Main = () => (\n   <main>\n     <h1>React Avançado</h1>\n   </main>\n )\n+\n+export default Main\n"
-        },
-        {
-          "date": 1700138758212,
-          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n+import * as S from './styles'\n+\n const Main = () => (\n-  <main>\n+  <S.Wrapper>\n     <h1>React Avançado</h1>\n   </main>\n )\n \n"
-        },
-        {
-          "date": 1700138771818,
-          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,8 @@\n \n const Main = () => (\n   <S.Wrapper>\n     <h1>React Avançado</h1>\n-  </main>\n+  <S.Wrapper>\n )\n \n export default Main\n"
-        },
-        {
-          "date": 1700139028211,
-          "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,8 @@\n \n const Main = () => (\n   <S.Wrapper>\n     <h1>React Avançado</h1>\n-  <S.Wrapper>\n+  </S.Wrapper>\n )\n \n export default Main\n"
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1700091566467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1700091590626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n-const Main = () => {\n-  ;<main>\n+const Main = () => (\n+  <main>\n     <h1>React Avançado</h1>\n   </main>\n-}\n+)\n \n export const Main\n"
+                },
+                {
+                    "date": 1700091626748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,5 @@\n-const Main = () => (\n+export const Main = () => (\n   <main>\n     <h1>React Avançado</h1>\n   </main>\n )\n-\n-export const Main\n"
+                },
+                {
+                    "date": 1700091639446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n-export const Main = () => (\n+const Main = () => (\n   <main>\n     <h1>React Avançado</h1>\n   </main>\n )\n+\n+export default Main\n"
+                },
+                {
+                    "date": 1700138758212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n+import * as S from './styles'\n+\n const Main = () => (\n-  <main>\n+  <S.Wrapper>\n     <h1>React Avançado</h1>\n   </main>\n )\n \n"
+                },
+                {
+                    "date": 1700138771818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,8 @@\n \n const Main = () => (\n   <S.Wrapper>\n     <h1>React Avançado</h1>\n-  </main>\n+  <S.Wrapper>\n )\n \n export default Main\n"
+                },
+                {
+                    "date": 1700139028211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,8 @@\n \n const Main = () => (\n   <S.Wrapper>\n     <h1>React Avançado</h1>\n-  <S.Wrapper>\n+  </S.Wrapper>\n )\n \n export default Main\n"
+                },
+                {
+                    "date": 1700223560103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,14 @@\n import * as S from './styles'\n \n const Main = () => (\n   <S.Wrapper>\n+    <S.Logo\n+      src=\"/img/logo.svg\"\n+      alt=\"Imagem de um átomo e React Avançado escrito ao lado.\"\n+    />\n+    <S.Title></S.Title>\n+    <S.Description></S.Description>\n     <h1>React Avançado</h1>\n   </S.Wrapper>\n )\n \n"
+                },
+                {
+                    "date": 1700223601157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,21 @@\n import * as S from './styles'\n \n-const Main = () => (\n+const Main = ({\n+  title = 'React Avançado',\n+  description = 'TypeScript, ReactJS, NextJS e Styled Components'\n+}) => (\n   <S.Wrapper>\n     <S.Logo\n       src=\"/img/logo.svg\"\n       alt=\"Imagem de um átomo e React Avançado escrito ao lado.\"\n     />\n     <S.Title></S.Title>\n     <S.Description></S.Description>\n-    <h1>React Avançado</h1>\n+    <S.Illustration\n+      src=\"/img/hero-illustration.svg\"\n+      alt=\"Um desenvolvedor de frente para uma tela com código.\"\n+    />\n   </S.Wrapper>\n )\n \n export default Main\n"
+                },
+                {
+                    "date": 1700223629208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n     <S.Logo\n       src=\"/img/logo.svg\"\n       alt=\"Imagem de um átomo e React Avançado escrito ao lado.\"\n     />\n-    <S.Title></S.Title>\n-    <S.Description></S.Description>\n+    <S.Title>{title}</S.Title>\n+    <S.Description>{description}</S.Description>\n     <S.Illustration\n       src=\"/img/hero-illustration.svg\"\n       alt=\"Um desenvolvedor de frente para uma tela com código.\"\n     />\n"
+                }
+            ],
+            "date": 1700091566467,
+            "name": "Commit-0",
+            "content": "const Main = () => {\n  ;<main>\n    <h1>React Avançado</h1>\n  </main>\n}\n\nexport const Main\n"
         }
-      ],
-      "date": 1700091566467,
-      "name": "Commit-0",
-      "content": "const Main = () => {\n  ;<main>\n    <h1>React Avançado</h1>\n  </main>\n}\n\nexport const Main\n"
-    }
-  ]
+    ]
 }
