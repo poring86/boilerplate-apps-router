@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 10,
+            "activePatchIndex": 11,
             "patches": [
                 {
                     "date": 1700170498088,
@@ -48,6 +48,10 @@
                 {
                     "date": 1700190745729,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import type { StorybookConfig } from '@storybook/nextjs'\n \n-const config: StorybookConfig = {\n+const config = {\n   staticDirs: ['../public'],\n   stories: ['../src/components/**/stories.tsx'],\n   addons: ['@storybook/addon-essentials'],\n   framework: {\n"
+                },
+                {
+                    "date": 1700192066638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,4 @@\n-import type { StorybookConfig } from '@storybook/nextjs'\n-\n const config = {\n   staticDirs: ['../public'],\n   stories: ['../src/components/**/stories.tsx'],\n   addons: ['@storybook/addon-essentials'],\n"
                 }
             ],
             "date": 1700170498088,
